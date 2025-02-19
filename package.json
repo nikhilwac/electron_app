@@ -5,13 +5,14 @@
   "main": "main.js",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/johndyer24/electron-auto-update-example.git"
+    "url" : "https://github.com/nikhilwac/electron_app.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder build --mac --win --publish always"
+    "deploy": "electron-builder build --mac --win --publish always",
+    "build-publish:linux": "npm run build && electron-builder --linux --publish always"
   },
   "author": "",
   "license": "ISC",
